@@ -45,10 +45,11 @@ class Deck extends Component {
       <Card name={c.name} image={c.image} key={c.id} />
     ));
     return (
-      <div>
-        <h1>CARD DEALER</h1>
-        <button onClick={this.getCard}>Deal!</button>
-        <div className="deck-cardarea">{ cards }</div>
+      <div className='Deck'>
+        <h1 className='Deck-title'>♠️ ♥️ CARD DEALER ♣️ ♦️</h1>
+        <h5 className='Deck-title subtitle'>react demo app</h5>
+        <button className='Deck-btn' onClick={this.getCard}>Deal!</button>
+        <div className='deck-cardarea'>{ cards }</div>
       </div>
     );
   }
